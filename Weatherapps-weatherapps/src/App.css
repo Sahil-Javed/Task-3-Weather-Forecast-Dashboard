@@ -1,0 +1,158 @@
+/*-- home-Page-Styling --*/
+
+body {
+  background: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+
+.weather-title{
+  margin-top: 8rem;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* input {
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 200;
+  width: 20%;
+  height: 30px;
+  border: none;
+} */
+
+/* button {
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  font-size: 20px;
+  font-weight: 200;
+  border: none;
+  height: 45px;
+} */
+
+.display {
+  text-align: center;
+  width: 400px;
+  color: #16a864;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 19rem;
+}
+
+.wrapper {
+  background-color: white;
+  height: 45vh;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+
+.wrapper h2 {
+  /* padding: 5px 0; */
+  text-align: center;
+  background: #0548b5;
+  color: white;
+  font-family: sans-serif;
+}
+.wrapper p {
+  margin: 20px 50px;
+  margin-right: 20px;
+  text-align: left;
+  color: #04214c;
+  font-size: 23px;
+}
+.wrapper h2 span {
+  font-size: 26px;
+  color: #9beefb;
+}
+.wrapper p span {
+  color: #f4780d;
+  font-size: 25px;
+}
+
+
+.dis-grid{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); */
+  gap: 2rem;
+}
+
+.left-grid{
+
+  display: grid;
+  grid-column: span 1 / span 1;
+}
+
+.mid-grid{
+
+  display: grid;
+  grid-column: span 2 / span 2;
+}
+
+
+.right-grid{
+
+  display: grid;
+  grid-column: span 2 / span 2;
+}
+/*-- Responsive Code --*/
+
+/* @media screen and (max-width: 1024px) {
+  .dis-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .wrapper {
+    padding: 0.5rem;
+    margin: auto;
+    height: auto;
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .dis-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .wrapper {
+    padding: 0.5rem;
+    margin: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .dis-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .wrapper {
+    padding: 0.5rem;
+    margin: auto;
+    height: auto;
+  }
+
+  .weather-title {
+    font-size: 1.2rem;
+  }
+
+  .wrapper h2 {
+    font-size: 1rem;
+  }
+
+  .wrapper p {
+    font-size: 0.9rem;
+  }
+}
